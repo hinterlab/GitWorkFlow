@@ -1,0 +1,36 @@
+{
+  "name": "gitworkflow",
+  "private": true,
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "version": "0.0.0-development",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release --branches main",
+    "commit": "git-cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hinterlab/GitWorkFlow.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hinterlab/GitWorkFlow/issues"
+  },
+  "homepage": "https://github.com/hinterlab/GitWorkFlow#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "semantic-release": "^19.0.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
